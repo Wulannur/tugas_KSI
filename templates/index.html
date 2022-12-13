@@ -1,0 +1,51 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>This Is Django Muse Page</title>
+</head>
+<link rel="stylesheet" type="text/css" href="{% static 'css/mystyle.css' %}" />
+
+<body>
+<ul class="navbar-nav ml-auto">
+    <li class="nav-item">
+        <a class="nav-link" href="{%
+            url "index" %}" title="">home
+        </a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="{%
+            url "blog:index" %}" title="">blog
+        </a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="{%
+            url "dinamis" year="2020" %}" title="">2020
+        </a>
+    </li>
+</ul>
+
+
+<h1 class="merah">
+    HI, THIS'S NEW PROJECT BY 1204007_WULAN
+</h1>
+<h1 class="hijau">
+    This is a picture of Django
+</h1>
+
+<h2 class="ungu">
+    Django was created in the fall of 2003
+</h2>
+
+<h3 class="hijaumuda">
+    Django is a lightweight and standalone web server for development and testing
+</h3>
+
+<a class="ungutua" href="https://www.djangoproject.com/">Now Let's Roll</a>
+
+<img src="{% static 'img/download.jpg' %}">
+
+</body>
+</html>
